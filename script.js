@@ -17,12 +17,13 @@ const mainGif = document.getElementById('main-gif');
 
 // "Hayır" butonuna basıldıkça çıkacak ikna mesajları
 const noTexts = [
-  "No",
-  "What about a matcha frostie? 🍵",
-  "I am going to die 🥺",
-  "Please babe 😭",
-  "PRETTY PLEASE 💖",
-  "No :("
+  "Hayır",
+  "Emin misin? 🥺",
+  "Bir daha düşün bence... 💭",
+  "Lütfen ama yaa 😭",
+  "Bak bu son şansın! 💖",
+  "Tamam tamam, söz çikolata alıcam! 🍫",  
+  "Hala mı hayır? 😢"
 ];
 
 let noCount = 0;
@@ -49,7 +50,7 @@ noBtn.onclick = () => {
 
 // "Evet" butonuna tıklandığında gerçekleşecekler (videonun sonundaki kutlama ekranı)
 yesBtn.onclick = () => {
-  question.innerText = "Yayy, thank you sayang 💕💕 (joking la)";
+  question.innerText = "yaşasssııın🥳🥳 💕💕 (joking la)";
   mainGif.src = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdW9uZnd3OXM2cjIyejRpdjBsajhkcXZ0cTBscXZsbXN6ZjNwdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MDJ9IbxxvDUQM/giphy.gif"; // Sarılsınlar GIF'i
   noBtn.style.display = 'none';
   yesBtn.style.display = 'none';
