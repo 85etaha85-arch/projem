@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffe6e9;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+.gif-box img {
+  width: 150px;
+  height: auto;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#yesBtn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#noBtn {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Videodaki arkaplan kalp efekti için stil */
+.heart {
+  position: absolute;
+  top: -10px;
+  font-size: 20px;
+  color: #ff4d6d;
+  animation: fall 4s linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
