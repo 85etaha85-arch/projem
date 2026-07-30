@@ -45,12 +45,17 @@ noBtn.onclick = () => {
   // Eğer çok tıklandıysa hayır butonunu gizleyebiliriz (videodaki gibi)
   if (noCount >= noTexts.length - 1) {
     noBtn.style.display = 'none';
+  // Eğer çok tıklandıysa hayır butonunu gizleyebiliriz (videodaki gibi)
+  if (noCount >= noTexts.length - 1) {
+    noBtn.style.display = 'none';
+    yesBtn.innerHTML = 'Yes <br><span style="font-size: 16px; font-weight: normal; display: block; margin-top: 8px;">(hehehe başka seçeneğin yook 😉)</span>';
+  }
   }
 };
 
 // "Evet" butonuna tıklandığında gerçekleşecekler (videonun sonundaki kutlama ekranı)
 yesBtn.onclick = () => {
-  question.innerText = "yaşasssııın🥳🥳 💕💕";
+  question.innerText = "yaşasssııın🥳🥳 💕💕   (love youu 😉🤍";
   mainGif.src = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdW9uZnd3OXM2cjIyejRpdjBsajhkcXZ0cTBscXZsbXN6ZjNwdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MDJ9IbxxvDUQM/giphy.gif"; // Sarılsınlar GIF'i
   noBtn.style.display = 'none';
   yesBtn.style.display = 'none';
